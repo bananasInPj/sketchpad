@@ -11,7 +11,7 @@ button{
     margin:60px 60px 60px 60px;
     width:960px;
     height:960px;
-    overflow:hidden;
+   
     background-color:blue;
 }
 .simple, .random, .null, .trail{

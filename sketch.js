@@ -1,5 +1,5 @@
 $(document).ready(function(){
-//4x4 GRID
+//draw 4x4 GRID 
 $('div').append("<div id='container'></div>");
 for(var g = 0; g < 4;g++){
 for(var h = 0; h < 4; h++){
