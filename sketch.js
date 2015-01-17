@@ -66,8 +66,8 @@ $.fn.Grid=function(mode){
 	$('.null, .simple, .random').remove();
 
 	//Validation of input	
-	do{
-		var rowColNum = prompt("Type in the number of rows/columns (between 1 and 64)");
+	while((isNaN(rowColNum)) || (rowColNum < 1 || rowColNum > 64) ){
+			var rowColNum = prompt("Type in the number of rows/columns (between 1 and 64)");
 
 		if(isNaN(rowColNum)){
 			alert("Type in a number");
@@ -79,7 +79,6 @@ $.fn.Grid=function(mode){
 			break;
 		}
 	}
-	while((isNaN(rowColNum)) || (rowColNum < 1 || rowColNum > 64) )
 
 	//put GRID into container
 	if(rowColNum> 1 && rowColNum < 64){
